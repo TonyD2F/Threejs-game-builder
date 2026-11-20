@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Three.js Game Starter</title>
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0f1a; font-family: system-ui, sans-serif; touch-action: none; }
+    canvas { display: block; width: 100%; height: 100%; }
+    #hud { position: fixed; inset: 0; pointer-events: none; color: #fff; padding: 12px; text-shadow: 0 1px 3px #000; }
+    #msg { position: fixed; inset: 0; display: grid; place-items: center; font-size: 2rem; color: #fff; text-align: center; background: rgba(0,0,0,.45); }
+    #msg[hidden] { display: none; }
+    #msg small { display: block; font-size: 1rem; opacity: .8; margin-top: .5rem; }
+  </style>
+</head>
+<body>
+  <div id="hud">Orbs: <span id="score">0</span> / <span id="total">0</span> &nbsp; Time: <span id="time">0.0</span>s</div>
+  <div id="msg" hidden></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
